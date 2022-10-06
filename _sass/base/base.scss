@@ -19,7 +19,6 @@ body {
     color: gray;
   }
 
-  ul {
-    list-style: none;
+  *, ::before, ::after {
+    box-sizing: inherit;
   }
-  
