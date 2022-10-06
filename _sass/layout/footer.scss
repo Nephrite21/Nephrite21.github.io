@@ -7,7 +7,9 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-    
+    position: fixed;
+    bottom: -2em;
+    left: 0;;
 }
 #footerList {
     padding: 0px;
@@ -21,7 +23,7 @@
     content: "";
     display: block;
     width: 0.1em;
-    height: 5em;
+    height: 8em;
     margin: 0px auto;
     background-color: black;
 }
