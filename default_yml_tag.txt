@@ -1,0 +1,9 @@
+---
+layout: 
+title:
+summary:
+date:
+categories:
+tag:
+mainimgsrc:
+---
