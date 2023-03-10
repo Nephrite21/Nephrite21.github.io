@@ -4,8 +4,10 @@ layout: default
 <div id="banner">
     <div id="bannerbackgroundimg"><img id="bannerbackgroundimgsource" src="{{ page.mainimgsrc }}" alt="bannerbackground"></div>
     <div id="bannerimg"><img id="bannerimgsource" class="container-md" src="{{ page.mainimgsrc }}" alt="banner"></div>
-    <div class="posttitle">{{ page.title }}</div>
-    <div class="date">{{ page.date }}</div>
+    <div id="posttitleform" class="container-md">
+        <div id="posttitle"><h1 style="color:aliceblue">{{ page.title }}</h1></div>
+        <div id="date"><h6>{{ page.date }}</h6></div>
+    </div> 
 </div>
 <div>
     {{ content }}
