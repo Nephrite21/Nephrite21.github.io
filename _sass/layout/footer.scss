@@ -11,7 +11,7 @@
         bottom: -2em;
         left: 0px;;
     }
-    #footerList {
+    #footerlist {
         padding: 0px;
         display: flex;
         flex-flow: column nowrap; 
@@ -19,7 +19,7 @@
         align-items: center;
         list-style: none;
     }
-    #footerList::after{
+    #footerlist::after{
         content: "";
         display: block;
         width: 0.1em;
@@ -27,7 +27,7 @@
         margin: 0px auto;
         background-color: black;
     }
-    #footerList li a img{
+    #footerlist li a img{
         height: 1.5em;
         margin: 10px;
         max-height: 40px;
@@ -49,4 +49,16 @@
     #footer{
         padding-inline-start: 20px;
     }    
+}
+@media screen and (max-width: 825px) {
+    #footer{
+        width: 100vw;
+        height: 50px;
+        background-color: whitesmoke;
+        display: flex;
+    }
+    #footerlist{
+        list-style: none;
+        float: left;
+    }
 }
