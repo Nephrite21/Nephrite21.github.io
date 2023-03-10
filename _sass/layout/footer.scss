@@ -1,5 +1,5 @@
 //need to change exact value to relative value
-@media screen and (min-width: 768px){
+@media screen and (min-width: 825px){
     #footer{
         display: inline-block;
         margin-block-start: 1em;
@@ -9,7 +9,7 @@
         padding-inline-start: 40px;
         position: fixed;
         bottom: -2em;
-        left: 0;;
+        left: 0px;;
     }
     #footerList {
         padding: 0px;
@@ -23,7 +23,7 @@
         content: "";
         display: block;
         width: 0.1em;
-        height: 8em;
+        height: 6em;
         margin: 0px auto;
         background-color: black;
     }
@@ -32,6 +32,17 @@
         margin: 10px;
         max-height: 40px;
     }
+}
+@media screen and (min-width: 992px) {
+    #footer{
+        left: 10px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #footer{
+        left: 20px
+    }
+    
 }
 
 @media screen and (max-width: 992px) {
