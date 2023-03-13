@@ -2419,4 +2419,18 @@ h1, .h1 { text-align: left; }
 
 #postcontent { width: 100%; min-height: 450px; padding: 20px; box-sizing: border-box; box-shadow: 0px 3px 5px 2px #D1D1D1; }
 
+html { overflow: hidden; }
+
+.section { width: 100%; background-color: aliceblue; position: relative; }
+
+.section > h1, .section > .h1 { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 20em; font-weight: bold; text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6); }
+
+.section:nth-child(even) { background-color: #333; }
+
+#about-me { height: 95vh; }
+
+#about-my-skill { height: 100vh; }
+
+#about-my-work { height: 150vh; }
+
 /*# sourceMappingURL=main.css.map */

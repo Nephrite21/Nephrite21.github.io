@@ -1,0 +1,27 @@
+html{overflow: hidden;}
+.section{
+    width: 100%;
+    background-color: aliceblue;
+    position: relative;
+}
+//확인을 위한 것 삭제 필요
+.section > h1{
+    position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+ 
+	font-size: 20em;
+	font-weight: bold;
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+.section:nth-child(even){background-color: #333;}
+
+#about-me{
+    height: 95vh;
+}
+#about-my-skill{
+    height: 100vh;
+}
+#about-my-work{
+    height: 150vh;
+}
