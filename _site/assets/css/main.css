@@ -2419,18 +2419,26 @@ h1, .h1 { text-align: left; }
 
 #postcontent { width: 100%; min-height: 450px; padding: 20px; box-sizing: border-box; box-shadow: 0px 3px 5px 2px #D1D1D1; }
 
-html { overflow: hidden; }
+html, body { scroll-snap-type: y mandatory; overflow: auto; }
 
-.section { width: 100%; background-color: aliceblue; position: relative; }
+.scroll-container { overflow: auto; }
 
-.section > h1, .section > .h1 { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 20em; font-weight: bold; text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6); }
+.scroll-area { scroll-snap-align: start; }
 
-.section:nth-child(even) { background-color: #333; }
+#big { width: 100%; }
 
-#about-me { height: 95vh; }
+#about-me { height: 100vh; position: relative; width: 100%; background-color: aliceblue; box-sizing: border-box; }
+
+#about-me-content { display: flex; position: absolute; width: 80%; top: 50%; left: 50%; transform: translate(-50%, -50%); justify-content: space-between; align-items: center; }
+
+#introduction { width: 70%; }
+
+#id-charactor { background-color: white; border-radius: 100%; }
+
+#my-charactor-img { height: 200px; }
 
 #about-my-skill { height: 100vh; }
 
-#about-my-work { height: 150vh; }
+#about-my-work { min-height: 150vh; }
 
 /*# sourceMappingURL=main.css.map */
