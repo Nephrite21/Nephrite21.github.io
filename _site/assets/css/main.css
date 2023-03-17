@@ -2425,8 +2425,6 @@ html, body { scroll-snap-type: y mandatory; overflow: auto; }
 
 .scroll-area { scroll-snap-align: start; }
 
-#big { width: 100%; }
-
 #about-me { height: 100vh; position: relative; width: 100%; background-color: aliceblue; box-sizing: border-box; }
 
 #about-me-content { display: flex; position: absolute; width: 80%; top: 50%; left: 50%; transform: translate(-50%, -50%); justify-content: space-between; align-items: center; }
@@ -2437,7 +2435,17 @@ html, body { scroll-snap-type: y mandatory; overflow: auto; }
 
 #my-charactor-img { height: 200px; }
 
-#about-my-skill { height: 100vh; }
+#about-my-skill-page { height: 100vh; display: flex; justify-content: center; align-items: center; }
+
+#about-my-skill-contents { text-align: center; }
+
+#skill-icons { display: flex; flex-flow: row nowrap; justify-content: space-between; }
+
+.skill-img { flex-basis: 25%; }
+
+.skill-img-src { width: 100%; }
+
+#about-my-skill-detail { display: none; }
 
 #about-my-work { min-height: 150vh; }
 

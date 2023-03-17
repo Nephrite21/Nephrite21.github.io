@@ -1,17 +1,17 @@
+//scroll-snap settings
 html,body{
     scroll-snap-type: y mandatory;
     overflow: auto;
 }
-
 .scroll-container{
     overflow: auto;
 }
 .scroll-area{
     scroll-snap-align: start;
 }
-#big{
-    width: 100%;
-}
+
+
+//1st page
 #about-me{
     height: 100vh;
     position:relative;
@@ -39,9 +39,33 @@ html,body{
 #my-charactor-img{
     height: 200px;
 }
-#about-my-skill{
+
+//2nd page
+#about-my-skill-page{
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+#about-my-skill-contents{
+    text-align: center;
+}
+#skill-icons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.skill-img{
+    flex-basis: 25%;
+}
+.skill-img-src{
+    width: 100%;
+}
+#about-my-skill-detail{
+    display: none;
+}
+
+//3rd page
 #about-my-work{
     min-height: 150vh;
 }
