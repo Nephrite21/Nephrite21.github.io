@@ -22,7 +22,16 @@ $(function(){
 
         $(".skill-img-src").each(function(){
             $(this).css('opacity','0.4');
-        })
+        });
         $(".skill-img:nth-child(" + currentIndex + ") .skill-img-src").css('opacity','1.0');
+        
+        $(".proficiency-part").each(function(){
+            $(this).css('display', 'none');
+        });
+        $(".interest-part").each(function(){
+            $(this).css('display', 'none');
+        });
+        
+        $(".proficiency-part:nth-child(1)").css('display','block');
     }
 });

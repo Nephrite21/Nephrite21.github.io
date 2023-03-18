@@ -2,69 +2,77 @@
 layout : default
 ---
 <div id="about-me" class="scroll-area">
-    <div id="about-me-content">
-        <div id="introduction">
-            <h1>
-                Hello!, I'm Nephrite21!
-            </h1>
-            <br>
-            <h3>
-                I usually play and make games! I'm interested in Unity, Unreal engine!
-            </h3>
+    <div id="">
+        <div id="about-me-content">
+            <div id="introduction">
+                <h1>{{ site.introduction.greeting }}</h1>
+                <br>
+                <h3>
+                    {{ site.introduction.introductionAboutMe }}
+                </h3>
+            </div>
+            <div id="id-charactor">
+                <a href='https://.pngtree.com/so/잔디'>
+                    <img id="my-charactor-img" src="/assets/img/dog.png" alt="잔디 png에서 .pngtree.com/">
+                </a>
+            </div>
         </div>
-        <div id="id-charactor">
-            <a href='https://.pngtree.com/so/잔디'>
-                <img id="my-charactor-img" src="/assets/img/dog.png" alt="잔디 png에서 .pngtree.com/">
-            </a>
-        </div>
+        <button id="show-detail-button" class="btn btn-primary" type="button" onclick="window.open('{{ site.blogurl }}')">See My learning!</button>
     </div>
 </div>
 <div id="about-my-skill-page" class="scroll-area">
     <div id="about-my-skill-contents">
-        <div id="about-my-skill-title">
-            <h2>My Skills</h2>
+        <div>
+            <div id="about-my-skill-title">
+                <h2>My Skills</h2>
+            </div>
+            <div id="skill-icons">
+                {% for item in site.skillImageIcon %}
+                <div class="skill-img">
+                    <img class="skill-img-src" src="{{ item.src }}"">
+                </div>
+                {% endfor %}
+            </div>
+            <button id="show-detail-button" class="btn btn-primary" name="detail-button">See Detail!</button>
         </div>
-        <div id="skill-icons">
-            <div class="skill-img">
-                <img class="skill-img-src" src="/assets/img/unity-csharp.png"">
-            </div>
-            <div class="skill-img">
-                <img class="skill-img-src" src="/assets/img/unreal-cpp.png"">
-            </div>
-            <div class="skill-img">
-                <img class="skill-img-src" src="/assets/img/html-css-js.png"">
-            </div>
-        </div>
-        <button name="detail-button">See Detail!</button>
         <div id="about-my-skill-detail">
+            {% for item in site.skillDetail %}
             <div class="about-my-skill-container">
-                <div id="unity-csharp-skill" class="skill-name">
-                    Unity - C#
+                <div class="skill-name">
+                    {{ item.skillName }}
                 </div>
-                <div id="unity-csharp-skill-detail" class="skill-detail">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget risus rhoncus, lacinia nibh vitae, bibendum dui. Suspendisse vel neque vel felis placerat elementum. In mollis ipsum imperdiet, rhoncus nisi vitae, interdum justo. Fusce non bibendum mauris, ac fringilla mauris. Vivamus pharetra neque et nisi sollicitudin eleifend vitae eget purus. Nunc semper mauris eu est hendrerit laoreet. Nulla ipsum ligula, pretium nec mi ac, tempus egestas est. Donec a velit nisi. In ut ultricies lacus. Praesent vel leo tortor. Aenean efficitur, augue sit amet scelerisque condimentum, eros sapien mattis dui, vitae molestie erat eros cursus enim.
+                <div class="skill-detail">
+                    {{ item.skillDetail }}
                 </div>
             </div>
-            <div class="about-my-skill-container">
-                <div id="unreal-cpp-skill" class="skill-name">
-                    Unreal - C++
-                </div>
-                <div id="unreal-cpp-skill-detail" class="skill-detail">
-                    Curabitur lacinia lectus in nunc pellentesque, quis sollicitudin mauris tempor. Vestibulum tempor dui enim, sit amet malesuada elit bibendum vitae. Nam tincidunt, nunc eu bibendum lobortis, lorem metus pulvinar tellus, in euismod libero purus sed nulla. Phasellus massa ante, laoreet sed ornare quis, semper sed enim. Aenean fermentum facilisis fermentum. Morbi consequat molestie lectus, et accumsan risus aliquam ut. Nulla tempor ligula nec nisl cursus, sed molestie nulla eleifend. Phasellus massa dui, ultrices id lectus commodo, congue pulvinar risus. Morbi facilisis nisl lectus, et sollicitudin nisi ultricies ornare. Sed dapibus maximus odio et iaculis. Nullam leo sem, rhoncus porta ultrices at, semper maximus neque.
-                </div>
-            </div>
-            <div class="about-my-skill-container">
-                <div id="html-css-javascript-skill" class="skill-name">
-                    Html - Css - JavaScript
-                </div>
-                <div id="html-css-javascript-skill-detail" class="skill-detail">
-                    
-freestar
+            {% endfor %}
 
-freestar
-Nulla facilisi. Integer ac massa in elit condimentum viverra. Suspendisse sodales nulla sagittis congue vulputate. Mauris ornare, libero id suscipit dignissim, eros ipsum scelerisque nisl, in tincidunt urna sapien eu diam. Vestibulum auctor, velit quis pretium vulputate, quam nunc vehicula eros, nec accumsan felis odio quis ante. Nulla dui augue, consequat vitae tellus viverra, aliquam accumsan ligula. Etiam aliquam sed purus non dapibus. Curabitur et dictum arcu, et tincidunt nunc. Praesent commodo finibus dui ac luctus. Quisque quis nulla pretium, interdum libero ac, molestie ligula. Fusce nunc nulla, eleifend id aliquet ut, dapibus quis eros.
+            {% for item in site.proficiencyProgressionBar %}
+            <div class="proficiency-part">
+                <div>
+                    proficiency
+                </div>
+                <div class="progress interest-and-proficiency">
+                    <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{ item.proficiency }}</div>
+                </div>
+                <div id="proficiency-description">
+                    {{ item.proficiencyDescription }}
                 </div>
             </div>
+            {% endfor %}
+            {% for item in site.interestProgressionBar %}
+            <div class="interest-part">
+                <div>
+                    interests
+                </div>
+                <div id="interest-level" class="progress interest-and-proficiency">
+                    <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{ item.interest }}</div>
+                </div>
+                <div id="interest-description">
+                    {{ item.interestDescription }}
+                </div>
+            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
