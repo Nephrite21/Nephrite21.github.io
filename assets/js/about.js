@@ -1,17 +1,21 @@
 $(function(){
     var currentIndex = 1;
     var indexNum = 3;
+    var isDetailOn = false;
 
     $("button[name='detail-button']").click(function(){
         $("button[name='detail-button']").css('display','none');
         $("#about-my-skill-detail").css('display', 'flex');
+        isDetailOn = true;
         changeSelect();
     });
 
     $(".skill-img-src").click(function(){
-        currentIndex = $(".skill-img .skill-img-src").index(this);
-        currentIndex++;
-        changeSelect();
+        if(isDetailOn){
+            currentIndex = $(".skill-img .skill-img-src").index(this);
+            currentIndex++;
+            changeSelect();
+        }
     })
     
 
