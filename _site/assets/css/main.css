@@ -2451,6 +2451,8 @@ html, body { scroll-snap-type: y mandatory; overflow: auto; }
 
 #proficiency-part, #interest-part { margin: 5px; }
 
+.interest-and-proficiency, .interest-and-proficiency { height: 20px; }
+
 #about-my-work { min-height: 150vh; }
 
 /*# sourceMappingURL=main.css.map */

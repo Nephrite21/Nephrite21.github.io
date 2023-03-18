@@ -1,5 +1,6 @@
 $(function(){
     var currentIndex = 1;
+    var indexNum = 3;
 
     $("button[name='detail-button']").click(function(){
         $("button[name='detail-button']").css('display','none');
@@ -31,7 +32,10 @@ $(function(){
         $(".interest-part").each(function(){
             $(this).css('display', 'none');
         });
-        
-        $(".proficiency-part:nth-child(1)").css('display','block');
+
+        currentIndex += indexNum;
+        $(".proficiency-part:nth-child("+currentIndex+")").css('display','block');
+        currentIndex += indexNum;
+        $(".interest-part:nth-child("+currentIndex+")").css('display','block');
     }
 });

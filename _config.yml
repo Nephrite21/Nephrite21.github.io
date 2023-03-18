@@ -15,6 +15,7 @@ introduction:
 
 # 1 icon = 1 detail = 1 progression bar
 # unity-csharp, unreal-cpp, html-css-js
+# if you add more component, change var indexNum at "about.js" to Number of contents
 skillImageIcon:  
   - src: /assets/img/unity-csharp.png
   - src: /assets/img/unreal-cpp.png
@@ -34,23 +35,23 @@ skillDetail:
 # proficiency : novice/advanced-beginner/competent/proficient/expert -> 10/30/50/70/90
 proficiencyProgressionBar:
   - proficiency: novice
-    proficiencyGrade: 10
+    proficiencyGrade: 10%
     proficiencyDescription: have experience in making simple simulation and prototype game.
   - proficiency: novice
-    proficiencyGrade: 0
+    proficiencyGrade: 0%
     proficiencyDescription: have no experience in making something with unreal engine
   - proficiency: novice
-    proficiencyGrade: 10
+    proficiencyGrade: 10%
     proficiencyDescription: novice
 
 # interest : very-low-interest/low-interest/some-interest/high-interest/very-high-interest -> 10/30/50/70/90  
 interestProgressionBar:
   - interest: some-interest
-    interestGrade: 50
+    interestGrade: 50%
     interestDescription: interested in making games with unity
   - interest: high-interest
-    interestGrade: 70
+    interestGrade: 70%
     interestDescription: interested in high quallity effect/graphic/modelling using unreal engine.
   - interest: low-interest
-    interestGrade: 30
+    interestGrade: 30%
     interestDescription: was interested in making this homepage on my own, but I am not interested in learning more about it
