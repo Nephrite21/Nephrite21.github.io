@@ -2,6 +2,23 @@ $(function(){
     var currentIndex = 1;
     var indexNum = 3;
     var isDetailOn = false;
+    var currentPageIndex = 0;
+    let option = {
+        threshold: 1.0
+    }
+
+    var observer = new IntersectionObserver((entries, observer)=>{
+        entries.forEach(entry=>{
+            if(!entry.isIntersecting){
+                return;
+            }
+            currentPageIndex = $(entry.target).index();
+            console.log(currentPageIndex);
+        })
+    }, option);
+    $(".scroll-area").each(function(){
+        observer.observe(this);
+    })
 
     $("button[name='detail-button']").click(function(){
         $("button[name='detail-button']").css('display','none');
