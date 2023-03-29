@@ -2425,27 +2425,43 @@ html, body { scroll-snap-type: y mandatory; overflow: auto; }
 
 .scroll-area { scroll-snap-align: start; }
 
-#about-me { height: 100vh; position: relative; width: 100vw; box-sizing: border-box; overflow: hidden; background-color: #1d1d20; }
+:root { --Main-color: #8CBDB9; --Bright-color: #E0E7E9; --SubText-color: #8FA8A8; --Shadow-color: #6D7B8C; --Background-color: #354649; --Background-Brighter-color: #415659; --Accent-color: #E5B680; }
 
-#about-banner { width: 100vw; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+body { background-color: var(--Background-color); }
+
+.Main-color { color: var(--Main-color); }
+
+.Bright-color { color: var(--Bright-color); }
+
+.Shadow-color { color: var(--Shadow-color); }
+
+.Background-color { color: var(--Background-color); }
+
+.Accent-color { color: var(--Accent-color); }
+
+.SubText-color { color: var(--SubText-color); }
+
+#about-me { height: 100vh; position: relative; width: 100vw; box-sizing: border-box; overflow: hidden; background-color: var(--Background-color); }
+
+#about-banner { position: absolute; height: 200vh; top: -50%; right: calc(-40vh + 10vw); }
 
 .content-wrapper { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-flow: column; height: 100%; justify-content: space-evenly; align-items: center; z-index: 1; }
 
 #about-me-content { display: flex; width: 80%; margin-top: 120px; }
 
-#introduction { width: 70%; }
+#introduction { width: 75%; }
 
 #id-charactor { background-color: white; border-radius: 100%; }
 
 #my-charactor-img { height: 200px; }
 
-#show-detail-button { width: 30%; border-radius: 6% / 50%; margin: 20px; margin-bottom: 120px; }
+#show-detail-button { width: 15%; border-radius: 5px; margin: 20px; margin-bottom: 120px; background: none; border: 2px solid var(--Main-color); height: 3em; }
 
-#about-my-skill-page { min-height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #1d1d20; }
+#about-my-skill-page { min-height: 100vh; display: flex; justify-content: center; align-items: center; background-color: var(--Background-color); }
 
 #about-my-skill-contents { text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; }
 
-#skill-icons { display: flex; flex-flow: row nowrap; justify-content: space-between; }
+#skill-icons { display: flex; flex-flow: row nowrap; justify-content: space-between; background-color: var(--SubText-color); }
 
 .skill-img { flex-basis: 25%; }
 
@@ -2459,6 +2475,6 @@ html, body { scroll-snap-type: y mandatory; overflow: auto; }
 
 .skill-detail { height: 180px; }
 
-#about-my-work { min-height: 150vh; background-color: #1d1d20; }
+#about-my-work { min-height: 150vh; background-color: var(--Background-color); }
 
 /*# sourceMappingURL=main.css.map */

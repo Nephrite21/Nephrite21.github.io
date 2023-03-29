@@ -5,26 +5,27 @@ layout : default
   <div class="content-wrapper container-md">
     <div id="about-me-content">
       <div id="introduction">
-        <h1>{{ site.introduction.greeting }}</h1>
-        <br>
-        <h3>
+        <h1 class="Main-color" style="font-weight: bold">{{ site.introduction.greeting }}</h1>
+        <h2 class="SubText-color" style="font-weight: bold;">
+          Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        <h4 class="Bright-color">
           {{ site.introduction.introductionAboutMe }}
-        </h3>
+        </h4>
       </div>
     </div>
     <button
       id="show-detail-button"
-      class="btn btn-primary"
+      class="Bright-color"
       type="button"
       onclick="window.open('{{ site.blogurl }}')">See My learning!</button>
   </div>
-  <img id="about-banner" src="/assets/img/about-banner.png">
+  <!--<img id="about-banner" src="/assets/img/about-banner.png">-->
 </div>
 <div id="about-my-skill-page" class="scroll-area">
   <div id="about-my-skill-contents">
     <div>
       <div id="about-my-skill-title">
-        <h2>My Skills</h2>
+        <h2 class="Bright-color">My Skills</h2>
       </div>
       <div id="skill-icons">
         {% for item in site.skillImageIcon %}
@@ -44,48 +45,48 @@ layout : default
     <div id="about-my-skill-detail">
       {% for item in site.skillDetail %}
         <div class="about-my-skill-container">
-          <div class="skill-name">
+          <div class="skill-name Bright-color">
             {{ item.skillName }}
           </div>
-          <div class="skill-detail">
+          <div class="skill-detail Bright-color">
             {{ item.skillDetail }}
           </div>
         </div>
       {% endfor %}
       {% for item in site.proficiencyProgressionBar %}
         <div class="proficiency-part">
-          <div>
+          <div class="SubText-color">
             proficiency
           </div>
           <div class="progress interest-and-proficiency">
             <div
-              class="progress-bar"
+              class="progress-bar SubText-color"
               role="progressbar"
               style="width: {{ item.proficiencyGrade }}"
               aria-valuenow="25"
               aria-valuemin="0"
               aria-valuemax="100">{{ item.proficiency }}</div>
           </div>
-          <div id="proficiency-description">
+          <div id="proficiency-description" class="SubText-color">
             {{ item.proficiencyDescription }}
           </div>
         </div>
       {% endfor %}
       {% for item in site.interestProgressionBar %}
         <div class="interest-part">
-          <div>
+          <div class="SubText-color">
             interests
           </div>
           <div class="progress interest-and-proficiency">
             <div
-              class="progress-bar"
+              class="progress-bar SubText-color"
               role="progressbar"
               style="width: {{ item.interestGrade }}"
               aria-valuenow="25"
               aria-valuemin="0"
               aria-valuemax="100">{{ item.interest }}</div>
           </div>
-          <div id="interest-description">
+          <div id="interest-description" class="SubText-color">
             {{ item.interestDescription }}
           </div>
         </div>

@@ -5,12 +5,12 @@ email: gsm4526@naver.com
 url: https://Nephrite21.github.io
 
 githuburl: https://github.com/Nephrite21
-blogurl: https://nephrite21.tistory.com/1
+blogurl: https://nephrite21.tistory.com/
 
 #about page introduction
 introduction:  
   greeting: Hello!, I'm Nephrite21!
-  introductionAboutMe:  I usually play and make games! I'm interested in Unity, Unreal engine!
+  introductionAboutMe:  I usually play and make games! I'm interested in Unity, Unreal engine! Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum sapien pulvinar blandit imperdiet.
 
 
 # 1 icon = 1 detail = 1 progression bar
@@ -42,7 +42,7 @@ proficiencyProgressionBar:
     proficiencyDescription: have no experience in making something with unreal engine
   - proficiency: novice
     proficiencyGrade: 10%
-    proficiencyDescription: novice
+    proficiencyDescription: built this homepage with Jekyll/HTML/CSS/JS!
 
 # interest : very-low-interest/low-interest/some-interest/high-interest/very-high-interest -> 10/30/50/70/90  
 interestProgressionBar:
