@@ -13,7 +13,7 @@ $(function(){
             }
             currentPageIndex = $(entry.target).index();
             changePageIndicator();
-            console.log(currentPageIndex);
+            //console.log(currentPageIndex);
         })
     }, option);
 
@@ -24,9 +24,11 @@ $(function(){
     })
 
     $(".page-indicator-button").click(function(){
-        currentPageIndex = $(".page-indicator-button").index();
-        console.log(currentPageIndex);
-        $('html, body').animate( { scrollTop : $(".page-indicator-button:nth-child("+currentPageIndex+")").offset().top() }, 500 );
+        currentPageIndex = $(this).index() +2;
+        var offset = $(".scroll-area:nth-child("+currentPageIndex+")");
+        window.scrollTo(0,offset.top);
+        currentPageIndex -=1;
+        changePageIndicator();
     });
 
 

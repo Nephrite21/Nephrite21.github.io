@@ -1,4 +1,6 @@
+@charset "UTF-8";
 /*! Bootstrap v5.0.2 (https://getbootstrap.com/) Copyright 2011-2021 The Bootstrap Authors Copyright 2011-2021 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&family=Raleway:wght@800;900&display=swap");
 :root { --bs-blue: #0d6efd; --bs-indigo: #6610f2; --bs-purple: #6f42c1; --bs-pink: #d63384; --bs-red: #dc3545; --bs-orange: #fd7e14; --bs-yellow: #ffc107; --bs-green: #198754; --bs-teal: #20c997; --bs-cyan: #0dcaf0; --bs-white: #fff; --bs-gray: #6c757d; --bs-gray-dark: #343a40; --bs-primary: #0d6efd; --bs-secondary: #6c757d; --bs-success: #198754; --bs-info: #0dcaf0; --bs-warning: #ffc107; --bs-danger: #dc3545; --bs-light: #f8f9fa; --bs-dark: #212529; --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)); }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -2425,7 +2427,7 @@ html, body { scroll-snap-type: y mandatory; overflow: auto; }
 
 .scroll-area { scroll-snap-align: start; }
 
-:root { --Main-color: #8CBDB9; --Bright-color: #E0E7E9; --SubText-color: #8FA8A8; --Shadow-color: #6D7B8C; --Background-color: #354649; --Background-Brighter-color: #05353D; --Accent-color: #E5B680; }
+:root { --Main-color: #8CBDB9; --Bright-color: #E0E7E9; --SubText-color: #8FA8A8; --Shadow-color: #6D7B8C; --Background-color: #354649; --Background-Brighter-color: #3c5358; --Accent-color: #E5B680; }
 
 body { background-color: var(--Background-color); }
 
@@ -2455,13 +2457,19 @@ body { background-color: var(--Background-color); }
 
 .indicator-text:hover { color: var(--Bright-color); }
 
-#about-me { height: 100vh; position: relative; width: 100vw; box-sizing: border-box; overflow: hidden; background-color: var(--Background-color); }
+#about-me { height: 100vh; position: relative; width: 100vw; box-sizing: border-box; overflow: hidden; }
 
 #about-banner { position: absolute; height: 200vh; top: -50%; right: calc(-40vh + 10vw); }
 
 .content-wrapper { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-flow: column; height: 100%; justify-content: space-evenly; align-items: center; z-index: 1; }
 
 #about-me-content { display: flex; width: 80%; margin-top: 120px; }
+
+.font-Dosis { font-family: 'Dosis', sans-serif; }
+
+.font-Raleway { font-family: 'Raleway', sans-serif; }
+
+#about-me-content::before { width: 10px; height: 100%; content: "　"; background-color: var(--Accent-color); margin-right: 20px; }
 
 #introduction { width: 75%; }
 
