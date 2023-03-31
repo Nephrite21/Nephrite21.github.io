@@ -27,7 +27,7 @@ $(function(){
         currentPageIndex = $(this).index() +2;
         var offset = $(".scroll-area:nth-child("+currentPageIndex+")");
         $(".scroll-area").css("scroll-snap-align", "none");
-        $("html, body").animate({ top: "+=" + offset.offset().top });
+        $("html, body").animate({ scrollTop: "+=" + offset.offset().top },200);
         $(".scroll-area").css("scroll-snap-align", "start");
         currentPageIndex -=1;
     });

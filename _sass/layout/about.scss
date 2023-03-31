@@ -2,6 +2,7 @@
 html,body{
     scroll-snap-type: y mandatory;
     overflow: auto;
+    scroll-behavior: smooth;
 }
 .scroll-container{
     overflow: auto;
