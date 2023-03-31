@@ -26,9 +26,10 @@ $(function(){
     $(".page-indicator-button").click(function(){
         currentPageIndex = $(this).index() +2;
         var offset = $(".scroll-area:nth-child("+currentPageIndex+")");
-        window.scrollTo(0,offset.top);
+        $(".scroll-area").css("scroll-snap-align", "none");
+        $("html, body").animate({ top: "+=" + offset.offset().top });
+        $(".scroll-area").css("scroll-snap-align", "start");
         currentPageIndex -=1;
-        changePageIndicator();
     });
 
 

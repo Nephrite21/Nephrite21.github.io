@@ -2445,7 +2445,7 @@ body { background-color: var(--Background-color); }
 
 #page-indicator { display: flex; flex-direction: column; justify-content: center; align-items: end; position: fixed; top: 45%; right: 0%; z-index: 1; margin-right: 20px; }
 
-.indicator-dot { height: 12px; width: 12px; border-radius: 50%; background-color: var(--Main-color); margin: 5px; }
+.indicator-dot { height: 12px; width: 12px; border-radius: 50%; background-color: var(--Main-color); margin: 8px; }
 
 .page-indicator-button { display: flex; flex-direction: row; justify-content: space-between; align-items: center; border: none; background: none; }
 
