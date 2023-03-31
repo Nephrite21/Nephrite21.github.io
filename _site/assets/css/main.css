@@ -2467,7 +2467,7 @@ body { background-color: var(--Background-color); }
 
 .content-wrapper { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-flow: column; height: 100%; justify-content: space-evenly; align-items: center; z-index: 1; }
 
-#about-me-content { display: flex; width: 80%; margin-top: 120px; }
+#about-me-content { display: flex; width: 80%; margin-top: 12rem; margin-right: 15rem; }
 
 .font-Dosis { font-family: 'Dosis', sans-serif; }
 
@@ -2475,7 +2475,7 @@ body { background-color: var(--Background-color); }
 
 #about-me-content::before { width: 10px; height: 100%; content: "　"; background: linear-gradient(to top, var(--Accent-color), var(--Accent-Brighter-color)); margin-right: 20px; }
 
-#introduction { width: 75%; }
+#introduction { width: 85%; }
 
 #id-charactor { background-color: white; border-radius: 100%; }
 
