@@ -4,7 +4,7 @@ $(function(){
     var isDetailOn = false;
     var currentPageIndex = 1;
     let option = {
-        threshold:0.4
+        threshold:0.3
     }
     var observer = new IntersectionObserver((entries, observer)=>{
         entries.forEach(entry=>{
@@ -13,7 +13,7 @@ $(function(){
             }
             currentPageIndex = $(entry.target).index();
             changePageIndicator();
-            //console.log(currentPageIndex);
+            console.log(currentPageIndex);
         })
     }, option);
 
@@ -24,12 +24,11 @@ $(function(){
     })
 
     $(".page-indicator-button").click(function(){
-        currentPageIndex = $(this).index() +2;
-        var offset = $(".scroll-area:nth-child("+currentPageIndex+")");
+        var cPI = $(this).index() +2;
+        var offset = $(".scroll-area:nth-child("+cPI+")");
         $(".scroll-area").css("scroll-snap-align", "none");
-        $("html, body").animate({ scrollTop: "+=" + offset.offset().top },200);
+        $("html, body").animate({ scrollTop: "+=" + offset.offset().top },100);
         $(".scroll-area").css("scroll-snap-align", "start");
-        currentPageIndex -=1;
     });
 
 
