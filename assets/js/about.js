@@ -2,23 +2,38 @@ $(function(){
     var currentIndex = 1;
     var indexNum = 3;
     var isDetailOn = false;
-    var currentPageIndex = 0;
+    var currentPageIndex = 1;
     let option = {
-        threshold: 1.0
+        threshold:0.4
     }
-
     var observer = new IntersectionObserver((entries, observer)=>{
         entries.forEach(entry=>{
             if(!entry.isIntersecting){
                 return;
             }
             currentPageIndex = $(entry.target).index();
+            changePageIndicator();
             console.log(currentPageIndex);
         })
     }, option);
+
+    $(".page-indicator-button").hover(function(){
+        $(".page-indicator-button").children(".indicator-text").css('display','block');
+    },function(){
+        $(".page-indicator-button").children(".indicator-text").css('display','none');
+    })
+
+    $(".page-indicator-button").click(function(){
+        currentPageIndex = $(".page-indicator-button").index();
+        console.log(currentPageIndex);
+        $('html, body').animate( { scrollTop : $(".page-indicator-button:nth-child("+currentPageIndex+")").offset().top() }, 500 );
+    });
+
+
     $(".scroll-area").each(function(){
         observer.observe(this);
-    })
+    });
+    
 
     $("button[name='detail-button']").click(function(){
         $("button[name='detail-button']").css('display','none');
@@ -34,7 +49,12 @@ $(function(){
             changeSelect();
         }
     })
-    
+
+
+    function changePageIndicator(){
+        $(".indicator-dot").removeClass("activated");
+        $(".page-indicator-button:nth-child("+currentPageIndex+") .indicator-dot").addClass("activated");
+    }
 
     function changeSelect(){
         $(".about-my-skill-container").each(function(){

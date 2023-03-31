@@ -10,25 +10,70 @@ html,body{
     scroll-snap-align: start;
 }
 
+//root setting
 :root{
     --Main-color : #8CBDB9;
     --Bright-color : #E0E7E9;
     --SubText-color : #8FA8A8;
     --Shadow-color : #6D7B8C;
     --Background-color : #354649;
-    --Background-Brighter-color: #415659;
+    --Background-Brighter-color: #05353D;
     --Accent-color : #E5B680;
 }
 body{
     background-color: var(--Background-color);
 }
 
+//color setting
 .Main-color { color: var(--Main-color); }
 .Bright-color { color: var(--Bright-color); }
 .Shadow-color { color: var(--Shadow-color); }
 .Background-color { color: var(--Background-color); }
 .Accent-color { color: var(--Accent-color); }
 .SubText-color { color: var(--SubText-color); }
+
+//page indicator setting
+#page-indicator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    position: fixed;
+    top:45%;
+    right: 0%;
+    z-index: 1 ;
+    margin-right: 20px;
+}
+.indicator-dot{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: var( --Main-color);
+    margin: 5px;
+}
+.page-indicator-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background: none;
+}
+.long{
+    height: 24px;
+    border-radius: 50%/25%;
+}
+.indicator-text{
+    color: var(--SubText-color);
+    display: none;
+}
+.activated{
+    background-color: var(--Bright-color);
+}
+.indicator-text:hover{
+    color: var(--Bright-color);
+}
+
 
 //1st page
 #about-me{
