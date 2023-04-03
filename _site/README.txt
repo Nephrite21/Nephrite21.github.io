@@ -1,5 +1,7 @@
-autoprefixer is not applied
-  -because of the "_config.yml" file setting
-  when i add plugins to "_config.yml", it crashes.
+Hello! this is Nephrite21's blog(or portfolio whatever)
 
-banner image size : height over 450px
+
+
+known issue:
+scroll-snap enables when "3rd content page's height is 150vh" and "scroll to end" and "3rd page overflow is not 'hidden'"
+Design Text divider may cause this error

@@ -73,44 +73,6 @@ layout : default
           </div>
         </div>
       {% endfor %}
-      {% for item in site.proficiencyProgressionBar %}
-        <div class="proficiency-part">
-          <div class="SubText-color">
-            proficiency
-          </div>
-          <div class="progress interest-and-proficiency">
-            <div
-              class="progress-bar SubText-color"
-              role="progressbar"
-              style="width: {{ item.proficiencyGrade }}"
-              aria-valuenow="25"
-              aria-valuemin="0"
-              aria-valuemax="100">{{ item.proficiency }}</div>
-          </div>
-          <div id="proficiency-description" class="SubText-color">
-            {{ item.proficiencyDescription }}
-          </div>
-        </div>
-      {% endfor %}
-      {% for item in site.interestProgressionBar %}
-        <div class="interest-part">
-          <div class="SubText-color">
-            interests
-          </div>
-          <div class="progress interest-and-proficiency">
-            <div
-              class="progress-bar SubText-color"
-              role="progressbar"
-              style="width: {{ item.interestGrade }}"
-              aria-valuenow="25"
-              aria-valuemin="0"
-              aria-valuemax="100">{{ item.interest }}</div>
-          </div>
-          <div id="interest-description" class="SubText-color">
-            {{ item.interestDescription }}
-          </div>
-        </div>
-      {% endfor %}
     </div>
   </div>
   <div class="Design-text">
