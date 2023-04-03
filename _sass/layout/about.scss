@@ -12,6 +12,7 @@ html,body{
     scroll-snap-align: start;
 }
 
+
 //root setting
 :root{
     --Main-color : #8CBDB9;
@@ -25,6 +26,23 @@ html,body{
 }
 body{
     background-color: var(--Background-color);
+}
+.horizontal-flex{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+.Title{
+    color: var(--Bright-color);
+    font-family: Raleway, sans-serif;
+}
+ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 //color setting
@@ -89,7 +107,9 @@ body{
 .content-container{
     position: relative;
 }
-
+.width-15{
+    width: 15%;
+}
 
 //1st page
 #about-me{
@@ -125,19 +145,42 @@ body{
 }
 .font-Dosis{
     font-family: 'Dosis', sans-serif;
+    font-size: large;
 }
 .font-Raleway{
     font-family: 'Raleway', sans-serif;
 }
-#about-me-content::before{
-    width: 10px;
-    height: 100%;
-    content: "　";
+.beforeLeftLine{
+    position: relative;
+}
+.beforeLeftLine::before{
+    position: absolute;
+    width: 3px;
+    height: 80%;
+    content: "";
     background: linear-gradient(to top,var(--Accent-color), var(--Accent-Brighter-color),);
-    margin-right: 20px;
+    left: -3px;
+    margin-left: 15px;
+}
+.afterUnderLine::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    display: block;
+    height: 5px;
+    background: linear-gradient(to right,var(--Accent-color), var(--Accent-Brighter-color),);
 }
 #introduction{
     width: 85%;
+    position: relative;
+}
+#introduction::before{
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    content: "";
+    background: linear-gradient(to top,var(--Accent-color), var(--Accent-Brighter-color),);
+    left: -20px;
 }
 #id-charactor{
     background-color: white;
@@ -146,16 +189,15 @@ body{
 #my-charactor-img{
     height: 200px;
 }
-#show-detail-button{
-    width: 15%;
+.show-detail-button{
     border-radius: 5px;
     margin: 20px;
     margin-bottom: 120px;
     background: none;
     border: 2px solid var(--Main-color); 
-    height: 3em;
+    height: 2.5rem;
 }
-#show-detail-button:hover{
+.show-detail-button:hover{
     background-color: var(--Main-color);
     color: var(--Background-color);
     font-weight: 900;
@@ -177,10 +219,21 @@ body{
     justify-content: space-evenly;
     align-items: center;
 }
+#about-my-skill-title{
+    width: 100%;
+    margin-bottom: 60px;
+}
+#about-my-skill-title h2{
+    text-align: left;
+    position: relative;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+}
 #skill-icons{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin: 10px;
 }
 .skill-img{
     background-color: var(--SubText-color);
@@ -191,11 +244,18 @@ body{
     width: 100%;
     cursor: pointer;
 }
+.skill-name{
+    text-align: left;
+    font-family: Raleway, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 #about-my-skill-detail{
+    width: 90%;
     display: none;
     flex-direction: column;
     min-height: 30%;
-    margin-bottom: 50px;
 }
 #proficiency-part, #interest-part{
     margin: 5px;
@@ -206,10 +266,106 @@ body{
 .skill-detail{
     height: 180px;
 }
+.description{
+    width: 50%;
+    padding-left: 20px;
+    text-align: left;
+}
+.description p{
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--Bright-color);
+}
 
 //3rd page
 #about-my-work{
-    min-height: 160vh;
+    min-height: 180vh;
     width: 100%;
     overflow: hidden;
+}
+#about-my-Work-container{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#about-my-Work-title{
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+#about-my-Work-title h2{
+    text-align: left;
+    position: relative;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+}
+#about-my-Work-Main{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+#main-content-img{
+    position: absolute;
+    top: 45%;
+    left: 32%;
+    transform: translate(-50%,-50%);
+    width: 55%;
+    height: 80%;
+}
+#main-content-img img{
+    width: 100%;
+    height: 100%;
+}
+#main-content-description-section{
+    width: 40%;
+    height: 45%;
+    position: absolute;
+    z-index: 1;
+    top: 55%;
+    left: 72%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+#main-content-description{
+    background-color: var(--SubText-color);
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+#main-content-description-title{
+    color: var(--Bright-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+}
+#main-content-description-text{
+    color: var(--Bright-color);
+    font-family: Dosis, sans-serif;
+    font-weight: 600;
+}
+#main-content-description-button{
+    width: 30%;
+    height: 3rem;
+}
+#about-my-Work-another{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+.Wrap-item{
+    width: 33%;
+    height: 40vh;
+    background-color: var(--SubText-color);
+}
+.Wrap-item img{
+    width: 100%;
+    height: 100%;
 }

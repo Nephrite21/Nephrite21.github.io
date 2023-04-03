@@ -28,12 +28,12 @@ layout : default
         <h1 class="Main-color font-Raleway" style="font-weight: bold">{{ site.introduction.greeting }}</h1>
         <h2 class="SubText-color font-Raleway" style="font-weight: bold;">
           Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-        <h4 class="Bright-color font-Dosis">
+        <h4 class="Bright-color font-Dosis" style="font-size: 1.5rem;">
           {{ site.introduction.introductionAboutMe }}
         </h4>
       </div>
     </div>
-    <button id="show-detail-button" class="Bright-color font-Dosis" type="button"
+    <button class="Bright-color font-Dosis show-detail-button width-15" type="button"
       onclick="window.open('{{ site.blogurl }}')">See My learning!</button>
   </div>
   <div class="Design-text">
@@ -43,33 +43,45 @@ layout : default
 </div>
 <div id="about-my-skill-page" class="scroll-area content-container">
   <div id="about-my-skill-contents">
-    <div>
-      <div id="about-my-skill-title">
-        <h2 class="Bright-color">My Skills</h2>
-      </div>
-      <div id="skill-icons">
-        {% for item in site.skillImageIcon %}
-          <div class="skill-img">
-            <img
-              class="skill-img-src"
-              src="{{ item.src }}"
-              ">
-          </div>
-        {% endfor %}
-      </div>
-      <button
-        id="show-detail-button"
-        class="btn btn-primary font-Dosis"
-        name="detail-button">See Detail!</button>
+    <div id="about-my-skill-title" class="afterUnderLine">
+      <h2 class="Bright-color">My Skills</h2>
     </div>
+    <div id="skill-icons">
+      {% for item in site.skillImageIcon %}
+        <div class="skill-img">
+          <img class="skill-img-src" src="{{ item.src }}"">
+        </div>
+      {% endfor %}
+    </div>
+    <button
+      class="btn btn-primary font-Dosis show-detail-button width-15"
+      name="detail-button">See Detail!</button>
     <div id="about-my-skill-detail">
       {% for item in site.skillDetail %}
         <div class="about-my-skill-container">
-          <div class="skill-name Bright-color">
+          <div class="skill-name Bright-color font-Raleway">
             {{ item.skillName }}
           </div>
-          <div class="skill-detail Bright-color">
-            {{ item.skillDetail }}
+          <div class="horizontal-flex">
+            <div class="description skill-detail Bright-color beforeLeftLine font-Dosis">
+              {{ item.skillDetail }}
+            </div>
+            <div class="description beforeLeftLine font-Dosis">
+              <p>PreviousWork</p>
+              <ul>
+                {% for Works in item.previousWork %}
+                <li>
+                  <div class="horizontal-flex Bright-color font-Raleway">
+                    <a href="{{ Works.link }}" >{{ Works.title }}</a>
+                    -
+                    <div  class="Bright-color font-Dosis">
+                      {{ Works.description }}
+                    </div>
+                  </div>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
           </div>
         </div>
       {% endfor %}
@@ -80,6 +92,37 @@ layout : default
   </div>
 </div>
 <div id="about-my-work" class="scroll-area content-container">
+  <div id="about-my-Work-container">
+    <div id="about-my-Work-title" class="afterUnderLine">
+      <h2 class="Bright-color">My Works</h2>
+    </div>
+    <div id="about-my-Work-Main">
+      <div id="main-content-img">
+        <img src="/assets/img/about-banner.png">
+      </div>
+      <div id="main-content-description-section">
+        <div id="main-content-description">
+          <div id="main-content-description-title">
+            Main content
+          </div>
+          <div id="main-content-description-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a commodo nibh. Quisque non ligula ante. Praesent sed nunc eget arcu iaculis sagittis. Donec et convallis leo. Nulla sodales nibh nisi, vehicula condimentum erat rhoncus ut.
+          </div>
+        </div>
+        <button id="main-content-description-button" class="show-detail-button font-Dosis Bright-color" >Learn more</button>
+      </div>
+    </div>
+    <div id="about-my-Work-another">
+      {% for item in site.Works %}
+      <div class="Wrap-item">
+        <a href="{{ item.link }}"><img src="{{ item.img }}"></a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div id="semi-footer">
+
+  </div>
   <div class="Design-text">
     Works
   </div>

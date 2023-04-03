@@ -1,6 +1,5 @@
-@charset "UTF-8";
 /*! Bootstrap v5.0.2 (https://getbootstrap.com/) Copyright 2011-2021 The Bootstrap Authors Copyright 2011-2021 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) */
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&family=Raleway:wght@800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&family=Raleway:wght@500;800;900&display=swap");
 :root { --bs-blue: #0d6efd; --bs-indigo: #6610f2; --bs-purple: #6f42c1; --bs-pink: #d63384; --bs-red: #dc3545; --bs-orange: #fd7e14; --bs-yellow: #ffc107; --bs-green: #198754; --bs-teal: #20c997; --bs-cyan: #0dcaf0; --bs-white: #fff; --bs-gray: #6c757d; --bs-gray-dark: #343a40; --bs-primary: #0d6efd; --bs-secondary: #6c757d; --bs-success: #198754; --bs-info: #0dcaf0; --bs-warning: #ffc107; --bs-danger: #dc3545; --bs-light: #f8f9fa; --bs-dark: #212529; --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)); }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -2431,6 +2430,12 @@ html, body { scroll-snap-type: y mandatory; overflow: auto; scroll-behavior: smo
 
 body { background-color: var(--Background-color); }
 
+.horizontal-flex { display: flex; flex-flow: row; width: 100%; }
+
+.Title { color: var(--Bright-color); font-family: Raleway, sans-serif; }
+
+ul { columns: 2; -webkit-columns: 2; -moz-columns: 2; list-style: none; margin-left: 0; padding-left: 0; }
+
 .Main-color { color: var(--Main-color); }
 
 .Bright-color { color: var(--Bright-color); }
@@ -2461,6 +2466,8 @@ body { background-color: var(--Background-color); }
 
 .content-container { position: relative; }
 
+.width-15 { width: 15%; }
+
 #about-me { height: 100vh; position: relative; width: 100vw; box-sizing: border-box; overflow: hidden; }
 
 #about-banner { position: absolute; height: 200vh; top: -50%; right: calc(-40vh + 10vw); }
@@ -2469,33 +2476,45 @@ body { background-color: var(--Background-color); }
 
 #about-me-content { display: flex; width: 80%; margin-top: 12rem; margin-right: 15rem; }
 
-.font-Dosis { font-family: 'Dosis', sans-serif; }
+.font-Dosis { font-family: 'Dosis', sans-serif; font-size: large; }
 
 .font-Raleway { font-family: 'Raleway', sans-serif; }
 
-#about-me-content::before { width: 10px; height: 100%; content: "　"; background: linear-gradient(to top, var(--Accent-color), var(--Accent-Brighter-color)); margin-right: 20px; }
+.beforeLeftLine { position: relative; }
 
-#introduction { width: 85%; }
+.beforeLeftLine::before { position: absolute; width: 3px; height: 80%; content: ""; background: linear-gradient(to top, var(--Accent-color), var(--Accent-Brighter-color)); left: -3px; margin-left: 15px; }
+
+.afterUnderLine::after { position: absolute; content: ""; width: 100%; display: block; height: 5px; background: linear-gradient(to right, var(--Accent-color), var(--Accent-Brighter-color)); }
+
+#introduction { width: 85%; position: relative; }
+
+#introduction::before { position: absolute; width: 10px; height: 100%; content: ""; background: linear-gradient(to top, var(--Accent-color), var(--Accent-Brighter-color)); left: -20px; }
 
 #id-charactor { background-color: white; border-radius: 100%; }
 
 #my-charactor-img { height: 200px; }
 
-#show-detail-button { width: 15%; border-radius: 5px; margin: 20px; margin-bottom: 120px; background: none; border: 2px solid var(--Main-color); height: 3em; }
+.show-detail-button { border-radius: 5px; margin: 20px; margin-bottom: 120px; background: none; border: 2px solid var(--Main-color); height: 2.5rem; }
 
-#show-detail-button:hover { background-color: var(--Main-color); color: var(--Background-color); font-weight: 900; }
+.show-detail-button:hover { background-color: var(--Main-color); color: var(--Background-color); font-weight: 900; }
 
 #about-my-skill-page { min-height: 100vh; display: flex; justify-content: center; align-items: center; overflow: hidden; }
 
 #about-my-skill-contents { text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; }
 
-#skill-icons { display: flex; flex-flow: row nowrap; justify-content: space-between; }
+#about-my-skill-title { width: 100%; margin-bottom: 60px; }
+
+#about-my-skill-title h2, #about-my-skill-title .h2 { text-align: left; position: relative; font-family: Raleway, sans-serif; font-weight: 700; }
+
+#skill-icons { display: flex; flex-flow: row nowrap; justify-content: space-between; margin: 10px; }
 
 .skill-img { background-color: var(--SubText-color); border-radius: 35px; flex-basis: 20%; }
 
 .skill-img-src { width: 100%; cursor: pointer; }
 
-#about-my-skill-detail { display: none; flex-direction: column; min-height: 30%; margin-bottom: 50px; }
+.skill-name { text-align: left; font-family: Raleway, sans-serif; font-size: x-large; font-weight: bold; margin-bottom: 10px; }
+
+#about-my-skill-detail { width: 90%; display: none; flex-direction: column; min-height: 30%; }
 
 #proficiency-part, #interest-part { margin: 5px; }
 
@@ -2503,6 +2522,38 @@ body { background-color: var(--Background-color); }
 
 .skill-detail { height: 180px; }
 
-#about-my-work { min-height: 160vh; width: 100%; overflow: hidden; }
+.description { width: 50%; padding-left: 20px; text-align: left; }
+
+.description p { font-family: Raleway, sans-serif; font-weight: 500; font-size: 20px; color: var(--Bright-color); }
+
+#about-my-work { min-height: 180vh; width: 100%; overflow: hidden; }
+
+#about-my-Work-container { width: 100%; display: flex; flex-flow: column; justify-content: space-around; align-items: center; }
+
+#about-my-Work-title { width: 100%; margin-bottom: 30px; margin-top: 40px; }
+
+#about-my-Work-title h2, #about-my-Work-title .h2 { text-align: left; position: relative; font-family: Raleway, sans-serif; font-weight: 700; }
+
+#about-my-Work-Main { height: 65vh; width: 100%; display: flex; position: relative; }
+
+#main-content-img { position: absolute; top: 45%; left: 32%; transform: translate(-50%, -50%); width: 55%; height: 80%; }
+
+#main-content-img img { width: 100%; height: 100%; }
+
+#main-content-description-section { width: 40%; height: 45%; position: absolute; z-index: 1; top: 55%; left: 72%; transform: translate(-50%, -50%); display: flex; flex-flow: column; align-items: center; }
+
+#main-content-description { background-color: var(--SubText-color); border-radius: 10px; padding: 5px; box-sizing: border-box; margin-bottom: 10px; }
+
+#main-content-description-title { color: var(--Bright-color); font-family: Raleway, sans-serif; font-weight: 700; font-size: x-large; }
+
+#main-content-description-text { color: var(--Bright-color); font-family: Dosis, sans-serif; font-weight: 600; }
+
+#main-content-description-button { width: 30%; height: 3rem; }
+
+#about-my-Work-another { width: 80%; display: flex; flex-wrap: wrap; margin-bottom: 120px; }
+
+.Wrap-item { width: 33%; height: 40vh; background-color: var(--SubText-color); }
+
+.Wrap-item img { width: 100%; height: 100%; }
 
 /*# sourceMappingURL=main.css.map */
