@@ -2386,7 +2386,9 @@ h1, .h1 { text-align: center; color: gray; }
 
 *, ::before, ::after { box-sizing: inherit; }
 
-@media screen and (min-width: 825px) { #footer { display: inline-block; margin-block-start: 1em; margin-block-end: 0em; margin-inline-start: 0px; margin-inline-end: 0px; padding-inline-start: 40px; position: fixed; bottom: -2em; left: 0px; } #footerlist { padding: 0px; display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center; list-style: none; } #footerlist::after { content: ""; display: block; width: 0.1em; height: 6em; margin: 0px auto; background-color: black; } #footerlist li a img { height: 1.5em; margin: 10px; max-height: 40px; } }
+.none { background: none; border: none; padding: 0; margin: 0; }
+
+@media screen and (min-width: 825px) { #footer { display: inline-block; margin-block-start: 1em; margin-block-end: 0em; margin-inline-start: 0px; margin-inline-end: 0px; padding-inline-start: 40px; position: fixed; bottom: -2em; left: 0px; } #footerlist { padding: 0px; display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center; list-style: none; } #footerlist::after { content: ""; display: block; width: 0.1em; height: 6em; margin: 0px auto; background-color: black; } #footerlist li a img { height: 1.5em; margin: 10px; max-height: 40px; } #footerlist li button img { height: 1.5em; margin: 10px; max-height: 40px; } }
 
 @media screen and (min-width: 992px) { #footer { left: 10px; } }
 
@@ -2522,7 +2524,7 @@ ul { columns: 2; -webkit-columns: 2; -moz-columns: 2; list-style: none; margin-l
 
 .skill-detail { height: 180px; }
 
-.description { width: 50%; padding-left: 20px; text-align: left; }
+.description { width: 100%; padding-left: 20px; text-align: left; min-height: 200px; }
 
 .description p { font-family: Raleway, sans-serif; font-weight: 500; font-size: 20px; color: var(--Bright-color); }
 

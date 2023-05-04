@@ -267,9 +267,10 @@ ul {
     height: 180px;
 }
 .description{
-    width: 50%;
+    width: 100%;
     padding-left: 20px;
     text-align: left;
+    min-height: 200px;
 }
 .description p{
     font-family: Raleway, sans-serif;

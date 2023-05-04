@@ -10,7 +10,7 @@ blogurl: https://nephrite21.tistory.com/
 #about page introduction
 introduction:  
   greeting: Hello!, I'm Nephrite21!
-  introductionAboutMe:  I usually play and make games!<br>My dream is to create a game that allows people to fully immerse themselves, and find happiness in it.<br>To achive it, I design and develope games with Unity and Unreal<br> Learn more about me in My blog below
+  introductionAboutMe:  I usually play and make games!<br>My dream is to create a game that allows people to fully immerse themselves, and find happiness in it.<br>To achive it, I design and develope games with Unity and Unreal Engine<br> Learn more about me in My blog below
 
 
 
@@ -24,42 +24,28 @@ skillImageIcon:
 
 skillDetail:
   - skillName: Unity - C#
-    skillDetail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget risus rhoncus, lacinia nibh vitae, bibendum dui. Suspendisse vel neque vel felis placerat elementum. In mollis ipsum imperdiet, rhoncus nisi vitae, interdum justo. Fusce non bibendum mauris, ac fringilla mauris. Vivamus pharetra neque et nisi sollicitudin eleifend vitae eget purus. 
-    previousWork:
+    skillDetail: 
       - title: asd
-        link: https://www.naver.com/
+        link: https://nephrite21.github.io/
         description: asd is a goood website
-      - title: qwe
-        link: https://www.naver.com/
-        description: qwe is a goood website
-      - title: zxc
-        link: https://www.naver.com/
-        description: zxc is a goood website
   - skillName: Unreal - C++
-    skillDetail: Curabitur lacinia lectus in nunc pellentesque, quis sollicitudin mauris tempor. Vestibulum tempor dui enim, sit amet malesuada elit bibendum vitae. Nam tincidunt, nunc eu bibendum lobortis, lorem metus pulvinar tellus, in euismod libero purus sed nulla. Phasellus massa ante, laoreet sed ornare quis, semper sed enim. Aenean fermentum facilisis fermentum. 
+    skillDetail: 
     previousWork:
       - title: zxc
-        link: https://www.naver.com/
+        link: https://nephrite21.github.io/
         description: zxc is a goood website
-      - title: asd
-        link: https://www.naver.com/
-        description: asd is a goood website
-      - title: qwe
-        link: https://www.naver.com/
-        description: qwe is a goood website
-  - skillName: Html - Css - JavaScript
     skillDetail: asd
     previousWork:
-      - title: qwe
+      - title: Nephrite21.github.io
         link: https://nephrite21.github.io/
         description: The site you are viewing right now is built by myself with HTML/CSS/JS with jquery,bootstrap and Jekyll etc.
 
 Works:
   - img: /assets/img/game.png
-    link: https://www.naver.com/
+    link: https://nephrite21.github.io/
   - img: /assets/img/game.png
-    link: https://www.naver.com/
+    link: https://nephrite21.github.io/
   - img: /assets/img/game.png
-    link: https://www.naver.com/
+    link: https://nephrite21.github.io/
   - img: /assets/img/game.png
-    link: https://www.naver.com/
+    link: https://nephrite21.github.io/
