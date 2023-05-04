@@ -10,7 +10,8 @@ blogurl: https://nephrite21.tistory.com/
 #about page introduction
 introduction:  
   greeting: Hello!, I'm Nephrite21!
-  introductionAboutMe:  I usually play and make games! I'm interested in Unity, Unreal engine! Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum sapien pulvinar blandit imperdiet.
+  introductionAboutMe:  I usually play and make games!<br>My dream is to create a game that allows people to fully immerse themselves, and find happiness in it.<br>To achive it, I design and develope games with Unity and Unreal<br> Learn more about me in My blog below
+
 
 
 # 1 icon = 1 detail
@@ -47,17 +48,11 @@ skillDetail:
         link: https://www.naver.com/
         description: qwe is a goood website
   - skillName: Html - Css - JavaScript
-    skillDetail: Nulla facilisi. Integer ac massa in elit condimentum viverra. Suspendisse sodales nulla sagittis congue vulputate. Mauris ornare, libero id suscipit dignissim, eros ipsum scelerisque nisl, in tincidunt urna sapien eu diam. Vestibulum auctor, velit quis pretium vulputate, quam nunc vehicula eros, nec accumsan felis odio quis ante. 
+    skillDetail: asd
     previousWork:
       - title: qwe
-        link: https://www.naver.com/
-        description: qwe is a goood website
-      - title: zxc
-        link: https://www.naver.com/
-        description: zxc is a goood website
-      - title: asd
-        link: https://www.naver.com/
-        description: asd is a goood website
+        link: https://nephrite21.github.io/
+        description: The site you are viewing right now is built by myself with HTML/CSS/JS with jquery,bootstrap and Jekyll etc.
 
 Works:
   - img: /assets/img/game.png
