@@ -1,9 +1,22 @@
 <!--need to change exact value to relative value-->
 <div id="footer">
     <ul id="footerlist">
-        <li><a href=""><img src="/assets/img/envelope-fill.svg" alt="email"></a></li>
-        <li><a href=""><img src="/assets/img/telephone-fill.svg" alt="tel"></a></li>
+        <li><a onclick="copy()"><img src="/assets/img/envelope-fill.svg" alt="email"></a></li>
+        <script>
+            function copyToClipboard(val) {
+              const t = document.createElement("textarea");
+              document.body.appendChild(t);
+              t.value = val;
+              t.select();
+              document.execCommand('copy');
+              document.body.removeChild(t);
+            }
+            function copy() {
+              copyToClipboard('gsm4526@naver.com');
+              console.log('Copied!');
+            }
+        </script>
         <li><a href=" {{ site.githuburl }} " target="_blank"><img src="/assets/img/github.svg" alt="github"></a></li>
-        <li><a href=""><img src="/assets/img/file-earmark-person-fill.svg"></a></li>
+        <li><a href=" {{ site.blogurl }}"><img src="/assets/img/blog.svg"></a></li>
     </ul>
 </div>
