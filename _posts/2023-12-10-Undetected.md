@@ -40,7 +40,7 @@ mainimgsrc: /assets/img/Undetected.png
 ***
 <br/>
 <div class="download-divider">
-<button class="download-button" href="https://drive.google.com/file/d/1Alpajd9I-hSZ4JY-EiByq3nMqEch2pjc/view?usp=sharing">게임 파일 다운로드</button>
+<button class="download-button" onclick="location.href='https://drive.google.com/file/d/1Alpajd9I-hSZ4JY-EiByq3nMqEch2pjc/view?usp=sharing' ">게임 파일 다운로드</button>
 </div>
 
 <br/>
