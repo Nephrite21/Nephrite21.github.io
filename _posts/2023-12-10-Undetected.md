@@ -8,45 +8,141 @@ tag: Game
 mainimgsrc: /assets/img/Undetected.png
 ---
 
-# Lorem ipsum 
-dolor sit amet, consectetur adipiscing elit. Duis mollis neque mi, in tempor diam mattis vel. Fusce lobortis vestibulum nulla, sed convallis magna ultrices nec. Vivamus aliquam molli
-s neque ac aliquam. Integer porttitor ante id enim pulvinar consequat. Ut consectetur nulla a pretium dapibus. Duis convallis eros convallis elementum maximus. Nulla mollis tempus urna vel tristique.
-
-# Vivamus ornare ante 
-ac neque fermentum, a porttitor risus efficitur. Phasellus molestie dui ornare ipsum semper efficitur ac at felis. Duis quis neque hendrerit, interdum nisl eget, commodo mi. Curab
-
-# itur dapibus, ante 
-quis dapibus cursus, augue erat tincidunt magna, at lobortis risus est ac diam. Vivamus sed ultricies elit. Etiam quis consectetur est. Ut vehicula, lectus vitae auctor consequat, au
-gue nulla consectetur libero, ac bibendum mauris ipsum sit amet risus. Nunc scelerisque libero ac magna vestibulum, at bibendum ipsum aliquam. Sed vitae ex mi. Sed id dolor accumsan metus ullamcorper aliquam. Aliquam vitae sagittis enim.
-
-# Donec nec erat vestibulum, ultrices arcu semper, molestie tortor. Integer eu sem 
-molestie quam congue congue vel vel nisl. Nam eu felis eget risus dignissim ullamcorper. Cras et risus orci. Sed nisl nulla, sagittis eget sem dignissim, cursus accumsan odio. Vivamus pulvinar ex non libero venenatis cursus. Sed mol
-
-# lis viverra neque
-## , ut pellentesque lorem interdum non. 
-Ut ultricies ipsum sed rutrum imperdiet. Quisque quis laoreet massa, placerat fermentum erat. Ut bibendum sollicitudin diam, sit amet vehicula erat sollicitudin vitae. Donec porta ante ut dui porta, sit amet accumsan augue feugiat. Sed ante ex, elementum id mauris ac, 
-## interdum rutrum leo. 
-Ut sed nisl nunc. Vestibulum convallis, neque vel tincidunt fermentum, nisi felis pellente
-sque quam, et tincidunt eros diam eget lorem.
-
-# Vivamus commodo
- justo ante, et convallis orci vulputate eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Pellentesque ex arcu, interdum eget sagittis eu, volutpat id risus. Etiam at tempus risus. Duis consequat arcu et nunc interdum euismod. Donec nec bibendum tellus. Suspendisse ac 
-
-mi quis enim dapibus vulputate. Nullam iaculis feugiat lacinia.
-
-# Aenean auctor ornare velit, 
-ut vehicula purus fringilla a. Maecenas tincidunt lectus ultricies nulla fermentum, eget dictum nunc luctus. Proin pulvinar urna eget quam porttitor commodo. Donec tincidunt leo sed velit viverra, id blandit erat accumsan. Cras mattis pharetra urna ut accumsan. Quisque non malesuada
-
- leo, non porta lorem. Sed malesuada lectus ultricies mi pellentesque varius. Nulla porttitor suscipit lorem vitae semper. Suspendisse a tincidunt ligula, non interdum sapien. Curabitur tortor massa, semper nec metus ut, vulputate interdum odio. In hac habitasse platea dictumst. Mauris vitae tincidunt augue. Don
-ec ultrices est ac orci tempor placerat. Pellentesque ut nibh arcu. Morbi quis tellus sed diam tempor aliquam vitae id libero. Mauris eget sem ut eros dapibus ornare ac euismod lorem.
+# 발표 영상
+***
+<br/>
+<div id="PresentationYoutube">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-pz_yL5OkiQ?si=3pREEc3hZK4nPV6Y" title="GEB Final Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 
+# 트레일러
+***
+<br/>
+<div id="TrailerYoutube">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2Y8cKmC5oFM?si=XC8BTt9iGF-zIkTu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
+# 게임 다운로드
+***
+<br/>
+<div class="download-divider">
+<button class="download-button" href="https://drive.google.com/file/d/1Alpajd9I-hSZ4JY-EiByq3nMqEch2pjc/view?usp=sharing">게임 파일 다운로드</button>
+</div>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
+# 게임 배경
+***
+당신은 연구실에서 실험 당하던 슬라임입니다.<br/>
+어느 날 지능이 생긴 당신은 끔찍한 실험을 피하기 위해 이 곳을 탈출하기로 결심했습니다!<br/>
+하지만 당신은 점프조차 할 수 없는 나약한 슬라임… 😓 살아남기 위해 진화하세요!<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
+# 게임 설명
+***
+주변의 능력들을 흡수해 곳곳에 깔린 **연구원**과 **무장 경비원**을 기만하고 탈출하는 게임입니다.<br/>
+많은 수의 경비원들을 기만하기 위해서는 천장에 숨고, 웅크려서 투명해지는 등, 3D 공간을 잘 활용해야 합니다.<br/>
+탈출에 성공하기 위해서는 능력을 얻어 기만 수단을 얻고 적의 행동 패턴을 잘 파악해야 합니다.<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
+# 게임 특징
+***
+## 　1. 직관적 능력
 
+　　　“중력을 반전시키고, 분열체를 생성하고, 적에게 기생합니다”<br/>
+　　　직관적 능력을 다양하게 활용하여 난이도 있는 게임을 클리어 함으로써 성취감을 얻어 보세요!<br/>
 
-.
+## 　2. 단계적 성장
+
+　　　“능력을 얻고, 이를 적용해봅니다”<br/>
+　　　게임을 플레이하는 과정 속에서 플레이어는 캐릭터의 모든 능력을 적어도 한 번 이상 사용하게 유도 됩니다.<br/>
+
+## 　3. 인게임 플레이
+
+#### 　　　- 3차원 축 활용
+
+　　　　　　납작해지고, 천장에 붙는 등 3차원 공간을 적극 활용하는 플레이를 적극 권장합니다!<br/>
+
+#### 　　　- 분열체 활용
+
+　　　　　　단순한 기믹 용도가 아닌 퍼즐을 푸는 데 사용되는 능력도 가집니다.<br/>
+
+#### 　　　- 기생 능력
+
+　　　　　　기존에 접근 불가능하던 부분에 대한 접근 권한을 획득합니다.<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+# 튜토리얼
+***
+
+## 　- 이동
+
+　　　　키보드의 W, A, S, D키를 사용하여 슬라임을 움직입니다.<br/>
+　　　　(슬라임 움직이는 움짤)<br/>
+
+## 　- 웅크리기
+
+　　　　키보드의 왼쪽 Shift키를 사용하여 슬라임의 몸통을 납작시킵니다.<br/>
+　　　　(슬라임 웅크리는 움짤)<br/>
+
+## 　- 상호 작용
+
+　　　　키보드의 F키를 사용하여 능력을 얻는 등의 행동을 취합니다.<br/>
+　　　　(슬라임이 능력 얻는 장면 움짤)<br/>
+
+## 　- 중력 반전
+
+　　　　키보드의 Space Bar 키를 사용하여 슬라임의 중력을 반전시킵니다.<br/>
+　　　　(슬라임 위아래로 움직이는 움짤)<br/>
+
+## 　- 분열/회수
+
+　　　　키보드의 Q 키를 사용하여 슬라임의 본체를 분열하거나 회수합니다.<br/>
+　　　　(슬라임이 본체를 분열하는 움짤)<br/>
+　　　　(슬라임이 분열체를 회수하는 움짤)<br/>
+
+## 　- 기생/탈출
+
+　　　　키보드의 E키를 사용하여 연구원에 기생하거나 탈출합니다.<br/>
+　　　　(슬라임이 연구원에 기생하는 움짤)<br/>
+　　　　(슬라임이 연구원에게서 탈출하는 움짤)<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>

@@ -4,4 +4,55 @@
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 0px 3px 5px 2px #D1D1D1;
+    background-color: #D1D1D1;
+    padding: 100px;
+}
+#postcontent > h1{
+    color: #354649;
+}
+h1{
+    font-weight: bold;
+}
+h2{
+    font-weight: bold;
+    color: #354649;
+}
+h3{
+    font-weight: bold;
+    color: #354649;
+}
+h4{
+    color:#3c5358;
+}
+#PresentationYoutube{
+    width: 100%;
+    text-align: center;
+}
+#TrailerYoutube{
+    width: 100%;
+    text-align: center;
+}
+.download-button {
+    display: inline-block;
+    height:72px;
+    width: 256px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* 호버 효과 */
+.download-button:hover {
+    background-color: #3498db;
+    color: white;
+}
+.download-divider{
+    text-align: center;
 }
