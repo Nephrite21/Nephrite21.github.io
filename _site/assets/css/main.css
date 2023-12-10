@@ -2562,7 +2562,7 @@ ul { columns: 2; -webkit-columns: 2; -moz-columns: 2; list-style: none; margin-l
 
 #about-my-Work-Main { height: 65vh; width: 100%; display: flex; position: relative; }
 
-#main-content-img { position: absolute; top: 45%; left: 32%; transform: translate(-50%, -50%); width: 55%; height: 80%; }
+#main-content-img { position: absolute; top: 45%; left: 32%; transform: translate(-50%, -50%); width: 55%; height: 60%; }
 
 #main-content-img img { width: 100%; height: 100%; }
 
@@ -2576,9 +2576,9 @@ ul { columns: 2; -webkit-columns: 2; -moz-columns: 2; list-style: none; margin-l
 
 #main-content-description-button { width: 30%; height: 3rem; }
 
-#about-my-Work-another { width: 80%; display: flex; flex-wrap: wrap; margin-bottom: 120px; }
+#about-my-Work-another { width: 100%; display: flex; flex-wrap: wrap; margin-bottom: 120px; }
 
-.Wrap-item { width: 33%; height: 40vh; background-color: var(--SubText-color); }
+.Wrap-item { width: 30%; height: 30vh; background-color: var(--SubText-color); margin: 5px; }
 
 .Wrap-item img { width: 100%; height: 100%; }
 

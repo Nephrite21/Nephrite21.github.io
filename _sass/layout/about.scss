@@ -317,11 +317,12 @@ ul {
     left: 32%;
     transform: translate(-50%,-50%);
     width: 55%;
-    height: 80%;
+    height: 60%;
 }
 #main-content-img img{
     width: 100%;
     height: 100%;
+    
 }
 #main-content-description-section{
     width: 40%;
@@ -358,15 +359,16 @@ ul {
     height: 3rem;
 }
 #about-my-Work-another{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 120px;
 }
 .Wrap-item{
-    width: 33%;
-    height: 40vh;
+    width: 30%;
+    height: 30vh;
     background-color: var(--SubText-color);
+    margin: 5px;
 }
 .Wrap-item img{
     width: 100%;
